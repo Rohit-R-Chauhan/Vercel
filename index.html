@@ -102,7 +102,7 @@
       position:relative;
     }
 
-    /* BLUR BACKGROUND */
+    /* BACKGROUND BLUR */
 
     .blur{
       position:fixed;
@@ -172,7 +172,7 @@
       color:#0f172a;
     }
 
-    .hero-text h1 span{
+    .hero-text span{
       color:#00b86b;
     }
 
@@ -194,29 +194,12 @@
 
     .internal-link{
       color:#00a86b;
-      font-weight:700;
       text-decoration:none;
-      position:relative;
       transition:0.3s ease;
-    }
-
-    .internal-link::after{
-      content:'';
-      position:absolute;
-      left:0;
-      bottom:-3px;
-      width:0%;
-      height:2px;
-      background:#00a86b;
-      transition:0.4s ease;
     }
 
     .internal-link:hover{
       color:#008f5c;
-    }
-
-    .internal-link:hover::after{
-      width:100%;
     }
 
     /* LINKEDIN BUTTON */
@@ -240,10 +223,9 @@
     }
 
     .linkedin-btn:hover{
-      transform:translateY(-4px) scale(1.03);
+      transform:translateY(-4px);
       background:#00a86b;
       color:#ffffff;
-      box-shadow:0 15px 35px rgba(0,168,107,0.25);
     }
 
     /* IMAGE */
@@ -272,7 +254,7 @@
       transform:scale(1.05);
     }
 
-    /* SECTIONS */
+    /* SECTION */
 
     .section{
       padding:70px 0;
@@ -284,7 +266,6 @@
       color:#0f172a;
       position:relative;
       display:inline-block;
-      animation:fadeUp 1s ease;
     }
 
     .section-title::after{
@@ -314,7 +295,6 @@
 
     .glass-card:hover{
       transform:translateY(-6px);
-      box-shadow:0 20px 50px rgba(0,0,0,0.07);
     }
 
     .glass-card p{
@@ -341,11 +321,10 @@
       border:1px solid rgba(255,255,255,0.5);
       box-shadow:0 12px 35px rgba(0,0,0,0.05);
       transition:0.4s;
-      animation:fadeUp 1.3s ease;
     }
 
     .feature-card:hover{
-      transform:translateY(-8px) scale(1.02);
+      transform:translateY(-8px);
       background:#ffffff;
     }
 
@@ -384,7 +363,6 @@
 
     .footer-linkedin:hover{
       color:#00ff99;
-      transform:translateY(-3px);
     }
 
     /* ANIMATIONS */
@@ -451,12 +429,12 @@
 
 <body>
 
-  <!-- BLURS -->
+  <!-- BLUR EFFECT -->
 
   <div class="blur blur1"></div>
   <div class="blur blur2"></div>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
 
   <section class="hero">
 
@@ -465,6 +443,14 @@
       <div class="hero-text">
 
         <h1>
+
+          <a 
+            href="https://rohit-r-chauhan.netlify.app/" 
+            target="_blank"
+            class="internal-link"
+          >
+            Rohit R <span>Chauhan</span>
+          </a>
 
         </h1>
 
@@ -478,21 +464,17 @@
           financial habits for modern investors.
         </p>
 
-        <!-- LINKEDIN -->
-
         <a 
           href="https://www.linkedin.com/in/rohit-r-chauhan-19904852/" 
           target="_blank"
           class="linkedin-btn"
         >
-
           Connect on LinkedIn
-
         </a>
 
       </div>
 
-      <!-- IMAGE -->
+      <!-- PROFILE IMAGE -->
 
       <div class="hero-image">
 
@@ -507,52 +489,43 @@
 
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT SECTION -->
 
   <section class="section">
 
     <div class="container">
 
       <h2 class="section-title">
-        About 
-        <a 
-          href="https://rohit-r-chauhan.netlify.app/" 
-          target="_blank"
-          class="internal-link"
-        >
-          Rohit R Chauhan
-        </a>
+        About Rohit R Chauhan
       </h2>
 
       <div class="glass-card">
 
         <p>
-    
-
-          is an entrepreneur and financial innovator focused on building smarter and more practical investing systems for modern investors. As the Founder of 
-          , 
-
-          he is known for introducing the idea of adaptive investing through the concept of the Self-Adjusting SIP.
+          Rohit R Chauhan is an entrepreneur and financial innovator focused on
+          building smarter and more practical investing systems for modern
+          investors. As the Founder of InGood, he is known for introducing the
+          idea of adaptive investing through the concept of the Self-Adjusting SIP.
         </p>
 
         <p>
-          His work is driven by a deep understanding of how people actually manage money in real life, especially in situations where income, expenses, and financial priorities constantly change.
+          His work is driven by a deep understanding of how people actually
+          manage money in real life, especially in situations where income,
+          expenses, and financial priorities constantly change.
         </p>
 
         <p>
-          <a 
-            href="https://rohit-r-chauhan.netlify.app/" 
-            target="_blank"
-            class="internal-link"
-          >
-            Rohit R Chauhan
-          </a>
-
-          ’s approach to finance is strongly influenced by behavioral investing and cash flow management.
+          Rohit R Chauhan’s approach to finance is strongly influenced by
+          behavioral investing and cash flow management. He believes many people
+          struggle with investing not because they lack financial goals, but
+          because traditional investment systems are often too rigid and
+          disconnected from real-world financial behavior.
         </p>
 
         <p>
-          Instead of promoting fixed commitments and financial pressure, he focuses on creating systems that support flexibility, liquidity, and long-term consistency.
+          Instead of promoting fixed commitments and financial pressure, he
+          focuses on creating systems that support flexibility, liquidity,
+          and long-term consistency.
         </p>
 
       </div>
@@ -561,7 +534,7 @@
 
   </section>
 
-  <!-- FEATURES -->
+  <!-- VISION SECTION -->
 
   <section class="section">
 
@@ -574,18 +547,26 @@
       <div class="glass-card">
 
         <p>
-          Before building InGood, Rohit spent time studying common financial patterns among salaried professionals, freelancers, young earners, and first-time investors.
+          Before building InGood, Rohit spent time studying common financial
+          patterns among salaried professionals, freelancers, young earners,
+          and first-time investors.
         </p>
 
         <p>
-          He observed that unpredictable expenses, irregular income, and fear of losing liquidity were major reasons why people paused or avoided investing altogether.
+          He observed that unpredictable expenses, irregular income, and fear
+          of losing liquidity were major reasons why people paused or avoided
+          investing altogether.
         </p>
 
         <p>
-          This insight inspired him to create a platform that adapts according to affordability rather than forcing users into uncomfortable financial commitments.
+          This insight inspired him to create a platform that adapts according
+          to affordability rather than forcing users into uncomfortable
+          financial commitments.
         </p>
 
       </div>
+
+      <!-- FEATURES -->
 
       <div class="feature-grid">
 
@@ -594,7 +575,8 @@
           <h3>Cash Flow Investing</h3>
 
           <p>
-            Investment systems designed around real monthly income, affordability, and practical spending behavior.
+            Investment systems designed around real monthly income,
+            affordability, and practical spending behavior.
           </p>
 
         </div>
@@ -604,7 +586,8 @@
           <h3>Self-Adjusting SIP</h3>
 
           <p>
-            Smart SIP structures that automatically adapt according to changing financial conditions and surplus funds.
+            Smart SIP structures that automatically adapt according to
+            changing financial conditions and surplus funds.
           </p>
 
         </div>
@@ -614,7 +597,8 @@
           <h3>Liquidity First</h3>
 
           <p>
-            Flexible investing focused on financial comfort and maintaining healthy cash flow instead of rigid commitments.
+            Flexible investing focused on financial comfort and maintaining
+            healthy cash flow instead of rigid commitments.
           </p>
 
         </div>
@@ -624,7 +608,8 @@
           <h3>Financial Automation</h3>
 
           <p>
-            Intelligent automation that reduces financial stress and helps users build sustainable investment habits over time.
+            Intelligent automation that reduces financial stress and helps
+            users build sustainable investment habits over time.
           </p>
 
         </div>
@@ -635,7 +620,7 @@
 
   </section>
 
-  <!-- FUTURE -->
+  <!-- FUTURE SECTION -->
 
   <section class="section">
 
@@ -648,29 +633,28 @@
       <div class="glass-card">
 
         <p>
-          Through the InGood App, 
-          
-          <a 
-            href="https://rohit-r-chauhan.netlify.app/" 
-            target="_blank"
-            class="internal-link"
-          >
-            Rohit R Chauhan
-          </a>
-
-          introduced features such as cash flow–based investing, automatic surplus detection, self-adjusting contributions, liquidity-first planning, and intelligent automation.
+          Through the InGood App, Rohit R Chauhan introduced features such as
+          cash flow–based investing, automatic surplus detection,
+          self-adjusting contributions, liquidity-first planning,
+          and intelligent automation.
         </p>
 
         <p>
-          Powered by InGoodfinserv, the platform is designed to reduce financial stress while helping users build more sustainable investment habits over time.
+          Powered by InGoodfinserv, the platform is designed to reduce
+          financial stress while helping users build more sustainable
+          investment habits over time.
         </p>
 
         <p>
-          Beyond product development, Rohit R Chauhan regularly shares insights on financial psychology, investment consistency, saving behavior, and the future of adaptive investing.
+          Beyond product development, Rohit R Chauhan regularly shares
+          insights on financial psychology, investment consistency,
+          saving behavior, and the future of adaptive investing.
         </p>
 
         <p>
-          His long-term vision is to make investing more accessible, human-centered, and practical for a generation that values flexibility and financial confidence over rigid financial systems.
+          His long-term vision is to make investing more accessible,
+          human-centered, and practical for a generation that values
+          flexibility and financial confidence over rigid financial systems.
         </p>
 
       </div>
